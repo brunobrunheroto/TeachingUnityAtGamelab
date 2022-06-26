@@ -24,7 +24,7 @@ public class Parallax : MonoBehaviour
         transform.Translate(Vector3.up * paralaxSpeed * Time.deltaTime);
         secondBG.transform.Translate(Vector3.up * paralaxSpeed * Time.deltaTime);
 
-        // Return bacckground to initial position if out of bounds
+        // Return background to initial position if out of bounds
         if(transform.position.y> length)
         {
             transform.position = startPos;
